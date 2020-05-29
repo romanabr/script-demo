@@ -4,8 +4,14 @@ var a = 12;
 var b = 17 + a;
 
 // Можно обращаться к java объектам для получения данных
-var data = service1.getObjectById(b);
+var data = service.getObjectById(b);
 
-service1.save(data + " логика из скрипта");
+var card = service.findClientCard(b);
+
+client.lastName = "ds";
+client.firstName = "Roma"
+client.atributes("key", b)
+
+service.save(client);
 
 true;
